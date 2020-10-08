@@ -6,11 +6,11 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 
 ** # Importing and plotting the cities shapefile 
-cities = gpd.read_file('/Users/keifergonzalez/Downloads/Shapefiles/belgian_cities.shp')
+cities = gpd.read_file('test_shapefiles/belgian_cities.shp')
 cities.plot(cmap = 'jet', column = 'NAME_4', figsize = (15,15))
 
 ** # Importing and plotting AOI shapefile
-AOI = gpd.read_file('/Users/keifergonzalez/Downloads/Shapefiles/area_of_interest_.shp')
+AOI = gpd.read_file('test_shapefiles/area_of_interest_.shp')
 AOI.plot()
 
 ** # Display both shapefiles together
@@ -26,4 +26,4 @@ cities_in_AOI.plot(figsize = (10,10), cmap = 'winter',column = 'NAME_4')
 cities_in_AOI['Area(km2)'] = cities_in_AOI.area/1000000
 
 ** # Save the geodataframe to a .shp (Shapefile)
-cities_in_AOI.to_file('/Users/keifergonzalez/Downloads/Shapefiles/intersected_cities.shp')
+cities_in_AOI.to_file('test_shapefiles/intersected_cities.shp')
