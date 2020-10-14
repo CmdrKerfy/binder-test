@@ -3,3 +3,5 @@ numpy
 geopandas
 descartes
 pysimplegui
+rtree
+pygeos
