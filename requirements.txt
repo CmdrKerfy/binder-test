@@ -3,7 +3,6 @@ numpy
 geopandas
 descartes
 pysimplegui
-rtree
 pygeos
 scipy
 plotly
