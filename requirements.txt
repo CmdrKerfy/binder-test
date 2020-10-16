@@ -5,3 +5,6 @@ descartes
 pysimplegui
 rtree
 pygeos
+scipy
+plotly
+jupyter_plotly_dash
