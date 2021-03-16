@@ -7,8 +7,6 @@ pygeos
 scipy
 plotly
 jupyter_plotly_dash
-import sys
-import os
 
 import qgis
 from qgis.gui import *
