@@ -7,3 +7,12 @@ pygeos
 scipy
 plotly
 jupyter_plotly_dash
+import sys
+import os
+
+import qgis
+from qgis.gui import *
+from qgis.core import *
+from qgis.utils import plugins
+from PyQt5.QtCore import *
+from qgis.analysis import QgsNativeAlgorithms
